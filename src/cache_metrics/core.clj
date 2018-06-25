@@ -30,10 +30,10 @@
   (has? [_ item]
     (cache/has? cache item))
   (hit [_ item]
-    (.inc (:hits metrics))
+    (.mark (:hits metrics))
     (InstrumentedCache. (cache/hit cache item) metrics))
   (miss [_ item result]
-    (.inc (:misses metrics))
+    (.mark (:misses metrics))
     (InstrumentedCache. (cache/miss cache item result) metrics))
   (evict [_ key]
     (InstrumentedCache. (cache/evict cache key) metrics))
@@ -50,8 +50,8 @@
            :or {metric-name "clojure.core.cache"}}]
   {:pre [(some? registry)
          (satisfies? cache/CacheProtocol base)]}
-  (let [metrics {:hits   (.counter registry (str metric-name ".hits"))
-                 :misses (.counter registry (str metric-name ".misses"))}]
+  (let [metrics {:hits   (.meter registry (str metric-name ".hits"))
+                 :misses (.meter registry (str metric-name ".misses"))}]
     (InstrumentedCache. base metrics)))
 
 (defn cache-size-gauge [cache-a]

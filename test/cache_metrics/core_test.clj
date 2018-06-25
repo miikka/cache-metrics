@@ -17,8 +17,8 @@
     (dotimes [i 6]
       (let [cache-key (mod i 3)]
         (is (= cache-key (cache/lookup (swap! cache-a cache/through cache-key) cache-key)))))
-    (let [hits (.counter registry "clojure.core.cache.hits")
-          misses (.counter registry "clojure.core.cache.misses")]
+    (let [hits (.meter registry "clojure.core.cache.hits")
+          misses (.meter registry "clojure.core.cache.misses")]
       (is (= 3 (.getCount hits)))
       (is (= 3 (.getCount misses))))
     (is (= 3 (.getValue (get-gauge registry "clojure.core.cache.size"))))))
