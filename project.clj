@@ -1,4 +1,4 @@
-(defproject cache-metrics "0.1.1"
+(defproject cache-metrics "0.1.2-SNAPSHOT"
   :description "Instrumentation for core.cache"
   :url "https://github.com/miikka/cache-metrics"
   :license {:name "Eclipse Public License"
