@@ -45,7 +45,7 @@
   misses.
 
   Expects `:registry` argument that is the MetricRegistry for the metrics.
-  Optionally `:metric-name` argument specifies the name prefix for the metircs."
+  Optionally `:metric-name` argument specifies the name prefix for the metrics."
   [base & {:keys [registry metric-name]
            :or {metric-name "clojure.core.cache"}}]
   {:pre [(some? registry)
