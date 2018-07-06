@@ -10,7 +10,7 @@ A Clojure library for instrumenting [core.cache](https://github.com/clojure/core
 
 ## Usage
 
-See [the documentation](https://cljdoc.xyz/d/miikka/cache-metrics/0.1.0/api/cache-metrics.core).
+See [the documentation](https://cljdoc.xyz/d/miikka/cache-metrics/CURRENT/api/cache-metrics.core).
 
 ## License
 
