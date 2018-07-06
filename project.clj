@@ -8,4 +8,5 @@
                  [org.clojure/core.cache "0.6.5"]
                  [io.dropwizard.metrics/metrics-core "3.2.2"]]
   :plugins [[lein-auto "0.1.3"]
-            [lein-eftest "0.5.2"]])
+            [lein-eftest "0.5.2"]]
+  :profiles {:dev {:source-paths ["dev-src"]}})
