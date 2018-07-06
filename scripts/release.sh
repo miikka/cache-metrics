@@ -11,7 +11,7 @@ fi
 
 NEW_VERSION=$(lein run -m release.changelog)
 sed -i.sedbak "s/defproject \([[:graph:]]*\) \".*\"/defproject \1 \"$NEW_VERSION-SNAPSHOT\"/" project.clj
-sed -i.sedbak "\[cache-metrics \".*\"\]/\[cache-metrics \"$NEW_VERSION\"\]/" README.md
+sed -i.sedbak "s/\[cache-metrics \".*\"\]/\[cache-metrics \"$NEW_VERSION\"\]/" README.md
 rm *.sedbak
 
 git add version.edn CHANGELOG.md project.clj README.md
