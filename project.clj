@@ -3,6 +3,7 @@
   :url "https://github.com/metosin/cache-metrics"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
+  :deploy-repositories [["releases" :clojars]]
   :dependencies [[org.clojure/clojure "1.9.0"]
                  [org.clojure/core.cache "0.6.5"]
                  [io.dropwizard.metrics/metrics-core "3.2.2"]]
