@@ -18,5 +18,11 @@ in the root of the repository. The first line should be one of the following:
 
 The rest of the file should be a short summary of your changes.
 
+For example:
+
+    RELEASE_TYPE: minor
+    
+    This release adds a function for printing the text "Hello, world!".
+
 Once your pull request gets merged, your changelog entry gets automatically added to [the changelog](https://github.com/miikka/cache-metrics/blob/master/CHANGELOG.md)
 and a new release will be made.
