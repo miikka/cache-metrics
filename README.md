@@ -1,4 +1,4 @@
-# cache-metrics
+# cache-metrics [![cljdoc badge](https://cljdoc.org/badge/cache-metrics/cache-metrics)](https://cljdoc.org/d/cache-metrics/cache-metrics/CURRENT)
 
 A Clojure library for instrumenting [core.cache](https://github.com/clojure/core.cache) caches with [Dropwizard Metrics](https://metrics.dropwizard.io).
 
