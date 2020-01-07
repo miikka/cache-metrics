@@ -8,6 +8,6 @@
   :dependencies [[org.clojure/core.cache "0.8.2"]
                  [io.dropwizard.metrics/metrics-core "4.1.2"]]
   :plugins [[lein-auto "0.1.3"]
-            [lein-eftest "0.5.2"]]
-  :profiles {:dev {:dependencies [[org.clojure/clojure "1.9.0"]]
+            [lein-eftest "0.5.9"]]
+  :profiles {:dev {:dependencies [[org.clojure/clojure "1.10.1"]]
                    :source-paths ["dev-src"]}})
