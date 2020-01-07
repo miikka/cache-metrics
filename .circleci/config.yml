@@ -8,12 +8,11 @@ jobs:
       - checkout
       - restore_cache:
           key: v1-{{checksum "project.clj"}}
-      - run: lein deps
+      - run: lein eftest
       - save_cache:
           key: v1-{{checksum "project.clj"}}
           paths:
             - ~/.m2
-      - run: lein eftest
 
   lint:
     docker:
