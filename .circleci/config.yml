@@ -46,7 +46,7 @@ jobs:
           mkdir -p ~/.lein && cp secrets/profiles.clj ~/.lein/
       - add_ssh_keys:
           fingerprints:
-            - "ea:95:54:f1:57:98:7a:76:eb:71:24:cc:47:77:dd:b0"
+            - "fb:50:55:46:05:d2:79:aa:67:77:da:9f:c1:50:ee:b0"
       - run: ./scripts/release.sh
 
 workflows:
