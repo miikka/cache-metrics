@@ -1,4 +1,4 @@
-(defproject cache-metrics "0.1.2-SNAPSHOT"
+(defproject cache-metrics "0.1.3-SNAPSHOT"
   :description "Instrumentation for core.cache"
   :url "https://github.com/miikka/cache-metrics"
   :scm {:name "git", :url "https://github.com/miikka/cache-metrics"}

@@ -5,7 +5,7 @@ A Clojure library for instrumenting [core.cache](https://github.com/clojure/core
 ## Latest version
 
 ```clojure
-[cache-metrics "0.1.1"]
+[cache-metrics "0.1.3"]
 ```
 
 ## Usage
