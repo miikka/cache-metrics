@@ -14,7 +14,7 @@ See [the documentation](https://cljdoc.xyz/d/cache-metrics/cache-metrics/CURRENT
 
 ## License
 
-Copyright © 2018 Miikka Koskinen.
+Copyright © Miikka Koskinen.
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.
